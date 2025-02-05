@@ -9,7 +9,7 @@ weight: 4
 
 ## Azure CLI
 
-Azure CLI can be used to deploy HCIBox into your Azure subscription. Azure CLI is recommended if you have been provided a service principal by your Azure administrator for use with HCIBox. If you can create application registrations in Microsoft Entra ID, then [Azure Developer CLI](/azure_jumpstart_hcibox/deployment_azd) will be the optimal deployment option that satisfies most other prerequisites. Otherwise, read on to learn how to deploy HCIBox with Azure CLI.
+Azure CLI is used to deploy HCIBox into your Azure subscription. To deploy, you require a service principal by your Azure administrator for use with HCIBox. Read on to learn how to deploy HCIBox with Azure CLI.
 
 ### Prepare the environment
 
@@ -108,6 +108,8 @@ Azure CLI can be used to deploy HCIBox into your Azure subscription. Azure CLI i
 
   ![Screenshot showing retrieving Azure Local resource provider id](./hci_rp_id.png)
 
+
+> **Note:** If the ```az ad sp list --display-name "Microsoft.AzureStackHCI Resource Provider"``` command returns an empty array, you should first register the provider with this command : ```az provider register --namespace Microsoft.AzureStackHCI```
 
 > **Note:** Please avoid using the $ symbol in the `windowsAdminPassword`. Using this symbol can cause the LogonScript to fail.
 
