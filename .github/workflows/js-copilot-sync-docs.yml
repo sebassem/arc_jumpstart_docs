@@ -1,5 +1,9 @@
-name: Run Azure Login with OIDC
-on: [push,workflow_dispatch]
+name: Copilot - Sync docs
+on:
+  push:
+    branches:
+      - copilot-docs-metadata
+  workflow_dispatch:
 
 permissions:
   id-token: write
