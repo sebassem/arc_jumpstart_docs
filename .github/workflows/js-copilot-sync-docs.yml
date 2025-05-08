@@ -18,14 +18,20 @@ jobs:
         with:
           ref: copilot-docs-metadata
 
-      - name: 'Az CLI login'
+      - name: 'Az powershell login'
         uses: azure/login@v2
         with:
           client-id: ${{ secrets.CLIENT_ID }}
           tenant-id: ${{ secrets.TENANT_ID }}
           subscription-id: ${{ secrets.SUBSCRIPTION_ID }}
+          enable-AzPSSession: true
 
-      - name: 'Run az commands'
-        run: |
-          az account show
-          az group list
+      - name: Sync docs to storage account
+        uses: azure/powershell@v2
+        env:
+          storageAccountName: 'stgjscopilotdocs' # Add as repo secret
+          containerName: 'docs' # Add as repo secret
+        with:
+          azPSVersion: "latest"
+          inlineScript: |
+            ./scripts/powershell/copy-JumpstartDocs.ps1 -SourcePath docs -StorageAccountName $($env:storageAccountName) -ContainerName $($env:containerName)
