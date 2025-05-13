@@ -10,7 +10,7 @@ products:
  - "Azure Arc-enabled servers"
  - "Defender for Cloud"
 description: "This document demonstrates how to connect Azure Arc-enabled servers to Microsoft Defender for Cloud to protect and secure on-premises and muti-cloud servers using Azure services."
-Videos:
+videos:
  - title: 'Azure Defender integration with Azure Arc enabled servers'
    url: "https://youtu.be/PS5YLEOenik?si=b50zlfAsUDUucsD6"
    description: "In this demo, we will show how to improve your security posture and get advanced threat protection for your Azure Arc enabled servers using Azure Defender"

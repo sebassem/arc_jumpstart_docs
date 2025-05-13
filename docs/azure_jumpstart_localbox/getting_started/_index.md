@@ -16,7 +16,7 @@ products:
  - "Defender for Cloud"
  - "Azure Arc-enabled SQL Managed Instance"
 description: "Jumpstart LocalBox is a turnkey solution that provides a complete sandbox for exploring Azure Local capabilities and hybrid cloud integration in a virtual environment. LocalBox is designed to be completely self-contained within a single Azure subscription and resource group, which makes it easy for users to get hands-on with Azure Local and Azure Arc technology without the need for physical hardware."
-Videos:
+videos:
  - title: 'What is Jumpstart HCIBox?'
    url: "https://youtu.be/yLqdaLzAfuY?si=RMVtZxb6ACnII3yV"
    description: "Arc Jumpstart HCIBox is a turnkey solution that provides a complete sandbox for exploring Azure Local capabilities and hybrid cloud integration in a virtualized environment"

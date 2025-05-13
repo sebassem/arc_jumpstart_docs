@@ -19,7 +19,7 @@ products:
  - "Automanage Machine Configuration"
  - "Azure Policy"
 description: "ArcBox for IT Pros is a special flavor of ArcBox that's intended for users who want to experience Azure Arc-enabled servers and Arc-enabled SQL Servers capabilities in a sandbox environment."
-Videos:
+videos:
  - title: 'Azure Arc Jumpstart - Accelerate your Azure Arc learning and experimentation!'
    url: "https://www.youtube.com/watch?v=VvoZp69NiRk&t=242s"
    description: "A dive into the Azure Arc Jumpstart and all its resources to help you learn and experiment with the many Azure Arc solutions"
